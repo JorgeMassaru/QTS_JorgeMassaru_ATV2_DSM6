@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciador de Notas</title>
+</head>
+<body>
+    <h1>Gerenciador de Notas</h1>
+
+    <input
+        type="text"
+        id="title"
+        placeholder="Digite o título da nota"
+    >
+
+    <button id="submit">Adicionar Nota</button>
+
+    <ul id="note-list"></ul>
+
+    <script>
+        async function loadNotes() {
+            const response = await fetch("/notes");
+            const notes = await response.json();
+
+            const list = document.getElementById("note-list");
+            list.innerHTML = "";
+
+            notes.forEach(note => {
+                const li = document.createElement("li");
+                li.innerText = note.title;
+                li.setAttribute("data-testid", "note-item");
+                list.appendChild(li);
+            });
+        }
+
+        document.getElementById("submit").addEventListener("click", async () => {
+            const title = document.getElementById("title").value;
+
+            await fetch("/notes", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ title })
+            });
+
+            document.getElementById("title").value = "";
+            loadNotes();
+        });
+
+        loadNotes();
+    </script>
+</body>
+</html>
