@@ -229,8 +229,6 @@ A pipeline executa automaticamente a cada `push` ou `pull_request`:
 3. Analisa qualidade com **Flake8**
 4. Executa todos os testes com **Pytest**
 
-![GitHub Actions](imagens/github_actions.png)
-
 ```yaml
 name: Python Tests
 
