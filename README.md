@@ -214,9 +214,9 @@ Foi aplicado o ciclo RED → GREEN → REFACTOR para as funcionalidades de **pin
 
 ### Black
 
-```bash
+​```bash
 black .
-```
+​```
 
 ​```
 (venv) PS C:\Users\Jorge\Desktop\DSM6> black .
@@ -224,19 +224,16 @@ All done! ✨ 🍰 ✨
 15 files left unchanged.
 ​```
 
-(venv) PS C:\Users\Jorge\Desktop\DSM6>
-
 ### Flake8
 
-```bash
+​```bash
 flake8 .
-```
+​```
 
 ​```
 (venv) PS C:\Users\Jorge\Desktop\DSM6> flake8 .
 
 (venv) PS C:\Users\Jorge\Desktop\DSM6>
-​```
 
 ---
 
