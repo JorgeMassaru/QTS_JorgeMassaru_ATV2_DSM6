@@ -4,6 +4,16 @@ Projeto desenvolvido para a disciplina **Qualidade e Testes de Software**, utili
 
 ---
 
+## Autor
+
+**Jorge Massaru Hashiguchi da Silva**
+
+Qualidade e Testes de Software
+
+Professor: Maylon Henrique de Oliveira
+
+---
+
 ## Objetivo
 
 Desenvolver uma aplicação Web simples com Flask para gerenciamento de notas, aplicando na prática os conceitos de:
@@ -260,14 +270,4 @@ jobs:
         run: pytest
 ```
 
----
 
-## Autor
-
-**Raphael Pedretti da Silva**
-
-Curso: Desenvolvimento de Software Multiplataforma — FATEC Registro
-
-Disciplina: Qualidade e Testes de Software
-
-Professor: Maylon Henrique de Oliveira
