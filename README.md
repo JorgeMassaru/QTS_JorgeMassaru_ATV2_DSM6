@@ -218,7 +218,13 @@ Foi aplicado o ciclo RED → GREEN → REFACTOR para as funcionalidades de **pin
 black .
 ```
 
-![Black OK](imagens/black_ok.png)
+​```
+(venv) PS C:\Users\Jorge\Desktop\DSM6> black .
+All done! ✨ 🍰 ✨
+15 files left unchanged.
+​```
+
+(venv) PS C:\Users\Jorge\Desktop\DSM6>
 
 ### Flake8
 
@@ -226,7 +232,10 @@ black .
 flake8 .
 ```
 
-![Flake8 OK](imagens/flake8_ok.png)
+​```
+(venv) PS C:\Users\Jorge\Desktop\DSM6> flake8 .
+(venv) PS C:\Users\Jorge\Desktop\DSM6>
+​```
 
 ---
 
