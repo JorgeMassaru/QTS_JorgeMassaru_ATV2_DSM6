@@ -234,6 +234,7 @@ flake8 .
 
 ​```
 (venv) PS C:\Users\Jorge\Desktop\DSM6> flake8 .
+
 (venv) PS C:\Users\Jorge\Desktop\DSM6>
 ​```
 
